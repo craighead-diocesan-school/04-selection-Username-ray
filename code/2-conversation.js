@@ -38,27 +38,32 @@ function age() {
 
   alert('How old are you, ' + name + '?')
   let age = Number(prompt())
+  let invalidMin = 1
+  let invalidMax = 130
+  let needSupervision = 5
+  let canRetire = 65
+  let adult = 18
+  let sameAge = 16
 
-  if (age < 1) {
+  if (age < invalidMin) {
     alert('The age is invalid.')
   }
-  if (age > 130) {
+  if (age > invalidMax) {
     alert('The age is invalid.')
   }
-  if (age < 5 && age >= 1) {
+  if (age < needSupervision && age >= invalidMin) {
     alert('You need supervision when using a computer.')
     alert('Also, you are not the same age as me.')
   }
-  if (age > 65 && age <= 130) {
+  if (age > canRetire && age <= invalidMax) {
     alert('You can retire.')
     alert('Also, you are not the same age as me.')
   }
-  if (age >= 18) {
+  if (age >= adult) {
     alert('You are old enough to vote.')
     alert('Also, you are not the same age as me.')
   }
-  if (age != 16 && age >= 5 && age < 18) {
+  if (age != sameAge && age >= needSupervision && age < adult) {
     alert('You are not the same age as me.')
   }
-
 }

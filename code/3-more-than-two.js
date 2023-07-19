@@ -9,8 +9,9 @@ function moreThanTwo() {
 
     let compared = prompt(`What number do you want to compare to 2?`)
     compared = Number(compared)
+    let object = 2
 
-    if (compared >= 2) {
+    if (compared >= object) {
       alert(compared + ' is more than 2')
     } else {
       alert(compared + ' is not more than 2')

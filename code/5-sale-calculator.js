@@ -9,7 +9,9 @@ function saleCalculator() {
   let item = Number(prompt())
   alert('And what is the discount percentage?')
   let discount = Number(prompt())
-  let price = 0.01 * (100 - discount) * item
+  let percentageToRatio = 0.01
+  let maximumOfPercentage = 100
+  let price = percentageToRatio * (maximumOfPercentage - discount) * item
 
   if (price <= money) {
     alert('You have enough. You have $' + money + ' to spend, and with ' + discount + '% off, $' + item + ' comes down to $' + price + '.')
