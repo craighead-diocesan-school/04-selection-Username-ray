@@ -3,10 +3,8 @@
 // ####################################
 
 function capital() {
-  alert('What is your name?')
-  let name = prompt()
-  alert('Quick question, ' + name + '. What is the capital of France?')
-  let capital = prompt()
+  let name = prompt('What is your name?')
+  let capital = prompt('Quick question, ' + name + '. What is the capital of France?')
 
   if (capital == Paris){
     alert("That's right, " + name + ' .')

@@ -3,8 +3,7 @@
 // ####################################
 
 function drivingAge() {
-  alert('How old are you?')
-  let age = Number(prompt())
+  let age = Number(prompt('How old are you?'))
   let driveAge = 16
 
   if (age > driveAge) {

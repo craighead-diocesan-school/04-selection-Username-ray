@@ -5,12 +5,10 @@
 function conversation() {
   alert('Welcome to my conversation program.')
 
-  alert('Do you like cycling? Answer yes or no.')
-  let answer1 = prompt()
+  let answer1 = prompt('Do you like cycling? Answer yes or no.')
 
   if (answer1 == 'yes') {
-    alert("That's good - do you do athletics? Answer yes or no.")
-    let answer2 = prompt()
+    let answer2 = prompt("That's good - do you do athletics? Answer yes or no.")
 
     if (answer2 == 'yes') {
       alert('Good luck in your next race.')
@@ -19,8 +17,7 @@ function conversation() {
     }
 
   } else if (answer1 =='no') {
-    alert('Do you watch Olympic athletics? Answer yes or no.')
-    let answer3 = prompt()
+    let answer3 = prompt('Do you watch Olympic athletics? Answer yes or no.')
 
     if (answer3 == 'yes') {
       alert("That's good - it's inspiring.")
@@ -33,11 +30,9 @@ function conversation() {
 }
 
 function age() {
-  alert("What's your name?")
-  let name = prompt()
+  let name = prompt("What's your name?")
 
-  alert('How old are you, ' + name + '?')
-  let age = Number(prompt())
+  let age = Number(prompt('How old are you, ' + name + '?'))
   let invalidMin = 1
   let invalidMax = 130
   let needSupervision = 5

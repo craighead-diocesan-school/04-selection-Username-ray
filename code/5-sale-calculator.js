@@ -3,12 +3,9 @@
 // ####################################
 
 function saleCalculator() {
-  alert('How much money do you have to spend?')
-  let money = Number(prompt())
-  alert('How much is the item normally?')
-  let item = Number(prompt())
-  alert('And what is the discount percentage?')
-  let discount = Number(prompt())
+  let money = Number(prompt('How much money do you have to spend?'))
+  let item = Number(prompt('How much is the item normally?'))
+  let discount = Number(prompt('And what is the discount percentage?'))
   let percentageToRatio = 0.01
   let maximumOfPercentage = 100
   let price = percentageToRatio * (maximumOfPercentage - discount) * item
